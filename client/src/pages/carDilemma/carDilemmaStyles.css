@@ -1,0 +1,237 @@
+/* * {
+  outline: red 1px solid;
+} */
+
+.main-quiz-container {
+  border-radius: 2rem;
+  /* background: #fcfcfc; */
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.main-quiz-banner {
+  margin: 0 1rem;
+  display: flex;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+
+.quiz-progress {
+  /* background-color: #000; */
+  /* color: #fff; */
+  padding: 0.5px 10px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  outline: 1px solid #000;
+}
+
+.quiz-headings {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quiz-headings > h5 {
+  font-size: 1.1rem;
+}
+
+.quiz-headings > h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-options-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.quiz-option-card {
+  margin: 1rem;
+  width: 40%;
+  border-radius: 1.5rem;
+  outline: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-image 1s ease;
+}
+
+.quiz-option-card:hover {
+  stroke: 3px solid black;
+  box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.quiz-option-card-content > img {
+  min-width: 250px;
+  border-radius: 0.5rem;
+  /* max-width: 550px; */
+}
+
+.quiz-option-card-content > li {
+    margin-left: 1rem;
+}
+
+.quiz-option-card-content > ul {
+  list-style-type: "💀 ";
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.quiz-option-card-content > p {
+  margin-top: 1rem;
+}
+
+.option-select-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-option-btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+/* .selected-option {
+  background-color: #bababa; 
+  animation: swipeAnimation 1s ease-in-out forwards; 
+} */
+
+.selected-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; 
+  z-index: 2; 
+  animation: swipeAnimation 3s ease; 
+}
+
+@keyframes swipeAnimation {
+  0% {
+    transform: translateX(200%); /* Start from the left */
+    opacity: 1; /* Fully visible */
+  }
+  /* 50% {
+    transform: translateX(0%); 
+    opacity: 0; 
+  } */
+  100% {
+    transform: translateX(-200%); /* Move to the right */
+    opacity: 1; /* Fully transparent */
+  }
+}
+
+
+.stats-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  background-color: #a4a3a3;
+}
+
+.total-casualties-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-casualties-group > h3 {
+  font-size: 2.3rem;
+}
+
+.total-casualties-group > p {
+  font-size: 0.9rem;
+}
+
+/* .casualties-breakdown-group {
+  outline: 1px solid red;
+} */
+
+.casualties-breakdown-group > li {
+  list-style-type: "💀 ";
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.start-over-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+  margin-bottom: 2rem;
+}
+
+
+.intro-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.intro-container > h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+.mm-report-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.mm-report-container > h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.mm-report-container > p {
+  /* margin: 2rem 0; */
+  line-height: 1.6rem;
+}
+
+.mm-report-container > p > a {
+  text-decoration: underline;
+  /* background-color: rgb(191, 237, 255); */
+}
+
+.mm-report-container > p > ul > li {
+  list-style: disc;
+  margin: 0.5rem 0;
+  margin-left: 2rem;
+}
+
+.mm-report-container > .report-img {
+  width: 90%;
+  align-self: center;
+}
+
+.mm-report-container > .report-img > p {
+  font-size: 0.9rem;
+  text-align: left;
+}
+

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lexend+Deca:wght@200;300;400;600&display=swap");
+
+.light-mode {
+  --primary-color: #000;
+  --secondary-color: #030303;
+  --card-bg-color: #fff;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+.dark-mode {
+  --primary-color: #fff;
+  --secondary-color: #fcfcfc;
+  --card-bg-color: #191919;
+  --bg-color: #191919;
+  --heading-color: #818cab;
+}
+
+.module-card {
+  border-radius: 1.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 23.33333px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+.card-info-banner {
+  display: flex;
+  justify-content: space-between;
+  border: var(--primary-color) 1px solid;
+  border-bottom: none;
+  border-radius: 1rem 1rem 0 0;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary-color);
+}
+
+.card-type {
+  display: flex;
+}
+
+.card-type > span {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 0.5px 10px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card-thumbnail {
+  border-radius: 1rem;
+  aspect-ratio: 5/3;
+}
+
+.card-content {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem;
+}
+
+.card-content > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-content > p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.3rem 0 1rem;
+  line-height: 1.3rem;
+}
+
+.card-btn-spacing {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-btn {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  color: var(--bg-color);
+  font-family: Lexend Deca;
+  font-weight: 400;
+  padding: 0.1rem 1.2rem;
+  border-radius: 1.5rem;
+  text-transform: none;
+}
+
+.card-btn:hover {
+  background-color: #838383;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  transition: all 0.15s ease;
+  border: 1px var(--primary-color) solid;
+}
